@@ -1,3 +1,9 @@
+개발목표
+------------------
+Multiclient의 connection request를 concurrent하게 대응할 수 있는 서버를 event-based approach와 thread-based approach 방식을 통해 구현하고, 해당 구현의 결과를 비교하여 어느 방식이 효율적으로 접근할 수 있는지 알아볼 것이다. 
+
+개발범위
+---------------------
 1.	Task 1: Event-driven Approach
 프로젝트에서 global data 영역에서 선언한 pool 구조체를 활용하여 concurrent server의 구현을 진행하게 된다. 
 하나의 반복문에서, 선언된 pool을 순회하여 client가 서버에 요청한 connection request가 있는지 없는지 체크하고, connection request가 있었던 client들에 대해 client들의 요구에 맞춰 해당 요청에 대응되는 서비스를 concurrent하게 처리할 수 있게 된다. 
