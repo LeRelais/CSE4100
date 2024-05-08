@@ -2,6 +2,8 @@
 ------------------
 Multiclient의 connection request를 concurrent하게 대응할 수 있는 서버를 event-based approach와 thread-based approach 방식을 통해 구현하고, 해당 구현의 결과를 비교하여 어느 방식이 효율적으로 접근할 수 있는지 알아볼 것이다. 
 
+
+
 개발범위
 ---------------------
 1.	Task 1: Event-driven Approach
